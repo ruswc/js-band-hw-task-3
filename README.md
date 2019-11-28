@@ -11,7 +11,7 @@
 **Implemented:**
 - The localStorage object is implemented using the singleton pattern.
 - Forms were created using the factory pattern (this may not be rational or productive, but was done for practice)
-- Creation of transport was realized with the help of factory pattern (there are doubts that it was really possible to realize it)
+- Creation of transport was realized with the help of factory pattern (there is some doubt that I really did exactly what I wanted)
 - Application logic is built using modules
 - Partially implemented MVC model
 - The object key is prefixed with *"jsband"*

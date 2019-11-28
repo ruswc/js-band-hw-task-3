@@ -1,10 +1,7 @@
 // import '../helpers/common.helper.js'
-import {fff} from "../helpers/common.helper"
+import {f} from "../helpers/common.helper"
+import {Controller} from "./controller/Controller";
+import {Model} from "./models/Model";
+import {ViewForm} from "./view/ViewForm";
 
-console.log('done');
-
-((a, b) => {
-    console.log(a + b);
-})(5, 3);
-
-fff();
+const app = new Controller(new Model(), new ViewForm());

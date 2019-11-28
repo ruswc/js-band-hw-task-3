@@ -8,3 +8,12 @@
 - Update your existing functionality by using Method factory
 - Implement service for the local storage as Singleton
 
+**Implemented:**
+- The localStorage object is implemented using the singleton pattern.
+- Forms were created using the factory pattern (this may not be rational or productive, but was done for practice)
+- Creation of transport was realized with the help of factory pattern (there are doubts that it was really possible to realize it)
+- Application logic is built using modules
+- Partially implemented MVC model
+- The object key is prefixed with *"jsband"*
+
+**The application can be checked at:** https://ruswc.github.io/js-band-hw-task-3/public/index.html

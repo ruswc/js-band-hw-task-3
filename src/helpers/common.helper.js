@@ -5,3 +5,26 @@ export var clearFormField = function clearFormField(elements) {
         }
     }
 }
+
+// render list
+export function renderList() {
+    const keys = Object.keys(localStorage),
+        allTransportIndexes = keys.filter(val => val.indexOf('jsbandtransport') !== -1),
+        container = document.getElementById('listoftransport');
+
+    // clean container
+    container.innerHTML = "";
+
+    for (var i = 0, length = allTransportIndexes.length; i < length; i++) {
+        const plate = document.createElement('div');
+        plate.classList.add('plate');
+        var obj = JSON.parse(localStorage.getItem(allTransportIndexes[i]));
+        for (var key in obj) {
+            if (key !== "unique") {
+                plate.innerHTML += `<p><strong>${key}:</strong> ${obj[key]}</p>`;
+            }
+        }
+        container.append(plate);
+    }
+
+}

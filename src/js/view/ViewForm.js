@@ -1,7 +1,9 @@
 import {TransportFormFactory} from "../models/forms/TransportFormFactory";
-import {saveShip} from '../models/Transport'
-import {saveTruck} from '../models/Transport'
+// import {saveShip} from '../models/Transport'
+// import {saveTruck} from '../models/Transport'
 import {saveCost} from "../models/Cost";
+import {saveShip} from "../models/Ship";
+import {saveTruck} from "../models/Truck";
 
 export class ViewForm {
     constructor() {
